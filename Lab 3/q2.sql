@@ -99,6 +99,7 @@ SELECT
     book.Title,
     book.Publisher_Name,
     bookcopies.noofcopies,
+    bookcopies.Branch_Id,
     book_authors.Author_name AS 'Author Name'
 FROM
     book,
@@ -125,6 +126,9 @@ where Book_Id in (
 
 
 /* q3 */
+DELETE FROM book_lending WHERE Book_Id = 1;
+DELETE FROM book_copies WHERE Book_Id = 1;
+DELETE FROM book_authors WHERE Book_Id = 1;
 DELETE FROM book WHERE Book_Id = 1;
 SELECT * FROM book_lending;
 

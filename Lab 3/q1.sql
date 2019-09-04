@@ -58,18 +58,18 @@ insert into participated values('3412','ka23j90',56,14000);
 insert into participated values('4567','ka35f45',67,12450);
 insert into participated values('4522','ka36m78',87,10000);
 
-/* 3a */
+/* 1 */
 
 Update participated set damage_amount = 25000 where report_no = 12;
 
-/* 3b */
+/* 2 */
 
 Insert into participated values('1004','2004',10,3000);
 
-/* 4 */
+/* 3 */
 
 Select count(*) from accident where acc_date LIKE '2001-%-%';
 
-/* 5 */
+/* 4 */
 
 Select count(*) from car c ,participated p where c.reg_no=p.regno and c.model = 'benz'
